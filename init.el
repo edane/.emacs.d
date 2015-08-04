@@ -2,6 +2,8 @@
 (if (string= window-system "x")
     (set-default-font "Monospace 11"))
 
+
+
 ;; Load the package manager
 (require 'package)
 
@@ -20,6 +22,14 @@
 
 ;;load use-package
 (require 'use-package)
+
+
+
+;; install auto-complete
+(use-package auto-complete :ensure auto-complete)
+
+;;load auto-complete mode
+(ac-config-default)
 
 
 
