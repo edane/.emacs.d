@@ -2,6 +2,27 @@
 (if (string= window-system "x")
     (set-default-font "Monospace 11"))
 
+;; Load the package manager
+(require 'package)
+
+;; Add Melpa
+(add-to-list 'package-archives
+	     '("melpa" . "http://melpa.org/packages/") t)
+
+;;set up packages
+(package-initialize)
+
+;;Install use-package
+(unless (package-installed-p 'use-package)
+  (progn
+    (package-refresh-contents)
+    (package-install 'use-package)))
+
+;;load use-package
+(require 'use-package)
+
+
+
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
