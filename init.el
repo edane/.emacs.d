@@ -37,6 +37,10 @@
 (global-linum-mode 1)
 
 
+;; enable ido-mode
+(ido-mode 1)
+
+
 ;;highlight parenthesises
 (show-paren-mode 1)
 
