@@ -32,6 +32,13 @@
 (ac-config-default)
 
 
+;;enable linenum to show line number
+(setq linum-format "%3d ")
+(global-linum-mode 1)
+
+
+;;highlight parenthesises
+(show-paren-mode 1)
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
