@@ -36,6 +36,8 @@
 (setq linum-format "%3d ")
 (global-linum-mode 1)
 
+;;set tab-width to 4 spaces
+(setq-default tab-width 4)
 
 ;; enable ido-mode
 (ido-mode 1)
