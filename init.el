@@ -1,3 +1,10 @@
+;; change backup directory
+(let ((backup-dir (expand-file-name "backup" user-emacs-directory)))
+  (unless (file-directory-p backup-dir) ; If backup directory doesn't exist
+	(mkdir backup-dir))                 ; Create directory
+  ;; Set backup directory
+  (setq-default backup-directory-alist (cons (cons "." backup-dir) nil)))
+
 ;; Set font
 (if (string= window-system "x")
     (set-default-font "Monospace 11"))
