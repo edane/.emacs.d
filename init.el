@@ -31,6 +31,15 @@
 (require 'use-package)
 
 
+;;install guide-key
+(use-package guide-key :ensure guide-key)
+
+;;config of guide key
+(setq guide-key/guide-key-sequence t)
+
+;;load guide-key
+(guide-key-mode 1)
+
 
 ;; install auto-complete
 (use-package auto-complete :ensure auto-complete)
