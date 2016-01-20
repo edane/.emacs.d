@@ -6,8 +6,8 @@
   (setq-default backup-directory-alist (cons (cons "." backup-dir) nil)))
 
 ;; Set font
-(if (string= window-system "x")
-    (set-default-font "Monospace 11"))
+(add-to-list 'default-frame-alist '(font . "Liberation Mono 11"))
+
 
 
 
